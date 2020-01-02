@@ -1,32 +1,84 @@
-<div class="intro_box">
-<div class="introduction">
-<p>name</p>
-<p>profile</p>
-</div>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <%= image_tag 'UNADJUSTEDNONRAW_thumb_17.jpg', :size => '480x320' %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'UNADJUSTEDNONRAW_thumb_15.jpg', :size => '480x320' %>      
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'UNADJUSTEDNONRAW_thumb_4.jpg', :size => '480x320' %>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+<div class="home_box">
+  <%= image_tag 'olia-gozha-J4kK8b9Fgj8-unsplash.jpg', class: 'd-block w-100' %>
+  <div class="inner_box">
+    <h3>Shiraska-Takahiro</h3>
+    <p><%= link_to 'About me', about_index_path, class: 'btn' %></p>
   </div>
 </div>
+
+<!-- Portfolio start -->
+
+	<section id="work" class="module module-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="module-header wow fadeInUp">
+					<h2 class="module-title"> My Works </h2>
+					<div class="module-line"></div>
+				</div>
+
+			</div><!-- .row -->
+
+			<!-- Portfolio Filter start-->
+
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul id="filter" class=" wow fadeInUp">
+						<li class="active" data-group="all">All</li>
+						<li data-group="slideshow">Slideshow</li>
+						<li data-group="video">Video</li>
+						<li data-group="image">Image</li>
+					</ul>
+
+				</div>
+
+			</div><!-- .row -->
+
+			<!-- Portfolio Filter end -->
+
+			<ul class="list-items-container">
+        <div class="row">
+				<li class="list-item" data-groups="all slideshow" targrt="_blank">
+					<figure>
+          <%= image_tag 'スクリーンショット 2020-01-03 4.10.29.png' %>
+						<figcaption>
+							<a href="https://homeru913.herokuapp.com" class="simple-ajax-popup"></a>
+							<div class="caption-inner">
+								<h3 class="portfolio-item-title">Homeru</h3>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+
+				<li class="list-item" data-groups="all video">
+					<figure>
+          <%= image_tag 'スクリーンショット 2020-01-03 4.11.16.png' %>
+						<figcaption>
+							<a href="https://e-chat111.herokuapp.com" class="simple-ajax-popup"></a>
+							<div class="caption-inner">
+								<h3 class="portfolio-item-title">Chat-app</h3>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+
+				<li class="list-item" data-groups="all image">
+					<figure>
+          <%= image_tag 'スクリーンショット 2020-01-03 4.12.48.png' %>
+						<figcaption>
+							<a href="https://mediaf.herokuapp.com " class="simple-ajax-popup"></a>
+							<div class="caption-inner">
+								<h3 class="portfolio-item-title">Media</h3>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+
+        </div>
+			</ul><!-- .projects-container -->
+
+		</div><!-- .contaier -->
+
+  </section>
