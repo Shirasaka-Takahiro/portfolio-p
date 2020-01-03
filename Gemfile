@@ -60,3 +60,4 @@ gem "loofah", ">= 2.3.1"
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
+gem 'lightbox2'

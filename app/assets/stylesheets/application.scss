@@ -1,13 +1,31 @@
 @import "bootstrap";
+@import "font-awesome";
+
+// common
+
+h1 {
+	text-align: center;
+	margin: 30px 0 40px 0;
+}
+
+.index {
+	background-color: #EEEEEE;
+}
+
 
 // home_box
 
 .home_box {
-    position: relative;
+	position: relative;
+
+	.image {
+		height: 500px;
+		object-fit: cover;
+	}
 
     .inner_box {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -38,9 +56,27 @@
 
 // intorobox
 
-.intro_box {
-    width: 50%;
+.container {
+
+	h1 {
+		margin: 3%;
+	}
+
 }
+
+.intro_box {
+
+	.carousel {
+		margin: 5% 10% 10% 10%;
+	}
+
+	.self_intro {
+		margin: 20px 0;
+	}
+
+}
+
+// works
 
 #filter {
 	list-style-type: none;
@@ -267,4 +303,36 @@ figure {
 	-moz-border-radius: 3px 0 0 3px;
 	-o-border-radius: 3px 0 0 3px;
 	border-radius: 3px 0 0 3px;
+}
+
+#work {
+
+	.list-item-title {
+		text-align: center;
+	}
+
+}
+
+// 
+
+.contact_page {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+
+	h3 {
+		margin: 7px 20% 0 0;
+	}
+
+	.icon {
+		font-size: 35px;
+		color: #666666;
+		margin: 0 5px;
+	}
+}
+
+// footer 
+
+.footer {
+	margin: 20px;
 }

@@ -1,5 +1,6 @@
+<section class="index">
 <div class="home_box">
-  <%= image_tag 'olia-gozha-J4kK8b9Fgj8-unsplash.jpg', class: 'd-block w-100' %>
+  <%= image_tag 'olia-gozha-J4kK8b9Fgj8-unsplash.jpg', class: 'd-block w-100 image' %>
   <div class="inner_box">
     <h3>Shiraska-Takahiro</h3>
     <p><%= link_to 'About me', about_index_path, class: 'btn' %></p>
@@ -8,12 +9,13 @@
 
 <!-- Portfolio start -->
 
+<h1>Works</h1>
 	<section id="work" class="module module-gray">
-		<div class="container">
+		<div class="container text-center">
 			<div class="row">
 
 				<div class="module-header wow fadeInUp">
-					<h2 class="module-title"> My Works </h2>
+					<h2 class="module-title"></h2>
 					<div class="module-line"></div>
 				</div>
 
@@ -41,10 +43,11 @@
 			<ul class="list-items-container">
         <div class="row">
 				<li class="list-item" data-groups="all slideshow" targrt="_blank">
+				  <p class="list-item-title">写真投稿アプリ 「Homeru」</p>
 					<figure>
-          <%= image_tag 'スクリーンショット 2020-01-03 4.10.29.png' %>
+                        <%= image_tag 'スクリーンショット 2020-01-03 4.10.29.png' %>
 						<figcaption>
-							<a href="https://homeru913.herokuapp.com" class="simple-ajax-popup"></a>
+							<a href="https://homeru913.herokuapp.com" target="_blank" class="simple-ajax-popup"></a>
 							<div class="caption-inner">
 								<h3 class="portfolio-item-title">Homeru</h3>
 							</div>
@@ -53,24 +56,26 @@
 				</li>
 
 				<li class="list-item" data-groups="all video">
+				  <p class="list-item-title">チャットアプリ 「E-Chat」</p>
 					<figure>
-          <%= image_tag 'スクリーンショット 2020-01-03 4.11.16.png' %>
+                         <%= image_tag 'スクリーンショット 2020-01-03 4.11.16.png' %>
 						<figcaption>
-							<a href="https://e-chat111.herokuapp.com" class="simple-ajax-popup"></a>
+							<a href="https://e-chat111.herokuapp.com" target="_blank" class="simple-ajax-popup"></a>
 							<div class="caption-inner">
-								<h3 class="portfolio-item-title">Chat-app</h3>
+								<h3 class="portfolio-item-title">E-Chat</h3>
 							</div>
 						</figcaption>
 					</figure>
 				</li>
 
 				<li class="list-item" data-groups="all image">
+				  <p class="list-item-title">記事投稿アプリ 「Media_a」</p>
 					<figure>
-          <%= image_tag 'スクリーンショット 2020-01-03 4.12.48.png' %>
+                        <%= image_tag 'スクリーンショット 2020-01-03 4.12.48.png' %>
 						<figcaption>
-							<a href="https://mediaf.herokuapp.com " class="simple-ajax-popup"></a>
+							<a href="https://mediaf.herokuapp.com " target="_blank" class="simple-ajax-popup"></a>
 							<div class="caption-inner">
-								<h3 class="portfolio-item-title">Media</h3>
+								<h3 class="portfolio-item-title">MediaA</h3>
 							</div>
 						</figcaption>
 					</figure>
@@ -80,5 +85,28 @@
 			</ul><!-- .projects-container -->
 
 		</div><!-- .contaier -->
-
   </section>
+
+<h1>Contant</h1>
+
+<div class="contact_page">
+  <h3>Contact Page</h3>
+  <div class="sns">
+  <div class="sns_icon">
+    <a href="https://www.twitter.com/daikyoukin913" target="_blank">
+      <span class="icon"><%= fa_icon("twitter-square") %></span>
+    </a>
+    <a href="https://www.facebook.com/takahiro.shirasaka.146" target="_blank">
+      <span class="icon"><%= fa_icon("facebook-square") %></span>
+    </a>
+    <a href="https://www.instagram.com/shirasaka3015/" target="_blank">
+      <span class="icon"><%= fa_icon("instagram") %></span>
+    </a>
+  </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="copy text-center">&copy;Shirasaka-Takahiro All Right Reserved</div>
+</div>
+</section>
