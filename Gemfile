@@ -55,7 +55,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap'
 gem 'jquery-rails'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass', '~> 5.12.0'
 gem "loofah", ">= 2.3.1"
 gem 'carrierwave'
 gem 'rmagick'
