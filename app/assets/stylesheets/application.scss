@@ -343,11 +343,21 @@ figure {
 
 .skills {
 	text-align: center;
+	margin-top: 30px;
 
 	.font {
-		font-size: 50px;
+		font-size: 70px;
 		color: #666666;
 
 	}
 
+	.font_name {
+		font-size: 20px;
+		padding: 10px;
+	}
+
+}
+
+.about_contact {
+	text-align: center;
 }
