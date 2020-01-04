@@ -2,6 +2,26 @@
 @import 'font-awesome-sprockets';
 @import "font-awesome";
 
+// media queli
+$pc: 1024px; // PC
+$tab: 680px; // tablet
+$sp: 480px;  // smartphone
+
+@mixin pc {
+    @media (max-width: ($pc)) {
+      @content;
+    }
+  }
+@mixin tab {
+    @media (max-width: ($tab)) {
+      @content;
+    }
+  }
+@mixin sp {
+    @media (max-width: ($sp)) {
+      @content;
+    }
+}
 
 // common
 
@@ -78,7 +98,7 @@ h1 {
 
 
 
-// works
+// home_works
 
 #filter {
 	list-style-type: none;
@@ -330,6 +350,13 @@ figure {
 		font-size: 35px;
 		color: #666666;
 		margin: 0 5px;
+		transition: all .3s;
+
+		&:hover {
+			color: black;
+			transform: translateY(-5px);
+		}
+
 	}
 }
 
@@ -361,3 +388,24 @@ figure {
 .about_contact {
 	text-align: center;
 }
+
+// works_index
+
+.works_index {
+	margin: 0 10%;
+
+	.homeru {
+		margin: 20px 0;
+	}
+	
+	.E-Chat {
+		margin: 20px 0;
+	}
+
+	.media_a {
+		margin: 20px 0;
+	}
+
+
+}
+

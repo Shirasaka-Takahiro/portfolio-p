@@ -21,9 +21,7 @@
       <ul class="navbar-nav ml-auto">
         <%= link_to 'Home', root_path, class: 'nav-item nav-link' %>        
         <%= link_to 'About me', about_index_path, class: 'nav-item nav-link' %>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Works</a>
-        </li>
+        <%= link_to 'Works', works_index_path, class: 'nav-item nav-link' %>        
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>          
         </li>
@@ -39,6 +37,23 @@
   <body>
     <%= yield %>
   </body>
+
+   <div class="contact_page">
+    <h3>Contact Page</h3>
+    <div class="sns">
+    <div class="sns_icon">
+      <a href="https://www.twitter.com/daikyoukin913" target="_blank">
+        <span class="icon"><%= icon("fab", "twitter-square") %></span>
+      </a>
+      <a href="https://www.facebook.com/takahiro.shirasaka.146" target="_blank">
+        <span class="icon"><%= icon("fab", "facebook-square") %></span>
+      </a>
+      <a href="https://www.instagram.com/shirasaka3015/" target="_blank">
+        <span class="icon"><%= icon("fab", "instagram") %></span>
+      </a>
+    </div>
+    </div>
+  </div>
 
   <div class="footer">
     <div class="copy text-center">&copy;Shirasaka-Takahiro All Right Reserved</div>
