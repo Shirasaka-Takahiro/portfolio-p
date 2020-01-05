@@ -8,12 +8,11 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="path/to/lightbox.css" rel="stylesheet" />
   </head>
 
   <div class="whole_body">
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="#">Shiraska-Takahiro</a>
+    <a class="navbar-brand" href="/home/index">Shiraska-Takahiro</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,10 +20,8 @@
       <ul class="navbar-nav ml-auto">
         <%= link_to 'Home', root_path, class: 'nav-item nav-link' %>        
         <%= link_to 'About me', about_index_path, class: 'nav-item nav-link' %>
-        <%= link_to 'Works', works_index_path, class: 'nav-item nav-link' %>        
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>          
-        </li>
+        <%= link_to 'Works', works_index_path, class: 'nav-item nav-link' %>
+        <%= link_to 'Contact', contacts_index_path, class: 'nav-item nav-link' %>        
       </ul>
     </div>
   </nav>
@@ -33,26 +30,21 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="path/to/lightbox.js"></script>
   <body>
     <%= yield %>
   </body>
 
-   <div class="contact_page">
-    <h3>Contact Page</h3>
-    <div class="sns">
-    <div class="sns_icon">
-      <a href="https://www.twitter.com/daikyoukin913" target="_blank">
-        <span class="icon"><%= icon("fab", "twitter-square") %></span>
-      </a>
-      <a href="https://www.facebook.com/takahiro.shirasaka.146" target="_blank">
-        <span class="icon"><%= icon("fab", "facebook-square") %></span>
-      </a>
-      <a href="https://www.instagram.com/shirasaka3015/" target="_blank">
-        <span class="icon"><%= icon("fab", "instagram") %></span>
-      </a>
-    </div>
-    </div>
+  <div class="contact_page">
+    <%= link_to icon("fas", "envelope", class: "icon"), contacts_index_path unless current_page?(contacts_index_path) %> 
+          <a href="https://www.twitter.com/daikyoukin913" target="_blank">
+            <%= icon("fab", "twitter-square", class: "icon") %>
+          </a>
+          <a href="https://www.facebook.com/takahiro.shirasaka.146" target="_blank">
+            <%= icon("fab", "facebook-square", class: "icon") %>
+          </a>
+          <a href="https://www.instagram.com/shirasaka3015/" target="_blank">
+            <%= icon("fab", "instagram", class: "icon") %>
+          </a>
   </div>
 
   <div class="footer">
