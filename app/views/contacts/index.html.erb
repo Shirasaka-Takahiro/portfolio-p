@@ -1,5 +1,4 @@
 <h1>Contact</h1>
-<p></p>
 <div id="formWrapper">
   <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe8XQt-AjGeR18K7vvykrMkHmjiTGLiEi2OuRuVlTkLhEu2Qw/formResponse" method="post" name="myForm" target="dummyIframe">
     <div class="contact_box">
@@ -20,7 +19,10 @@
     <input class="btn btn-secondary" type="button" value="送信" onclick="submitForm()"/>
   </form>
   <iframe name="dummyIframe" style="display:none;"></iframe>
-<div id="thxMessage" class="contact_box" style="display:none;"><p>お問い合わせありがとうございました。</p></div>
+</div>
+<div id="thxMessage" class="text-center" style="display:none;" >
+  <p>お問い合わせありがとうございました。</p>
+  <%= image_tag 'UNADJUSTEDNONRAW_thumb_18.jpg', class: 'contact_image' %>
 </div>
 <script>
   function submitForm(){

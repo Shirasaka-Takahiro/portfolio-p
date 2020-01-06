@@ -2,14 +2,15 @@
 <div class="home_box">
   <%= image_tag 'olia-gozha-J4kK8b9Fgj8-unsplash.jpg', class: 'd-block w-100 image' %>
   <div class="inner_box">
-    <h3>Shiraska-Takahiro</h3>
-    <p><%= link_to 'About me', about_index_path, class: 'btn' %></p>
+	<h3 class="name">Shirasaka-Takahiro</h3>
+    <p class="about_me"><%= link_to 'About me', about_index_path, class: 'btn' %></p>
   </div>
 </div>
 
 <!-- Portfolio start -->
 
-<h1>Works</h1>
+<div class="fadein">
+  <h1>Works</h1>
 	<section id="work" class="module module-gray">
 		<div class="container text-center">
 			<div class="row">
@@ -85,6 +86,6 @@
 			</ul><!-- .projects-container -->
 
 		</div><!-- .contaier -->
-  </section>
-
+    </section>
+  </div>
 </section>

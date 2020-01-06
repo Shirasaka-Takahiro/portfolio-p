@@ -28,3 +28,77 @@ require('jquery')
  *
  * @preserve
  */
+
+// home_index
+ 
+$(function() {
+    $('.about_me').hide().fadeIn(2000);
+});
+
+$(function() {
+    $('.name').hide().fadeIn(1000).css({'text-decoration':'underline', 'text-decoration-color':'#666666'});
+});
+
+$(window).scroll(function (){
+    $('.fadein').each(function() {
+        var elemPos = $(this).offset().top,
+            scroll = $(window).scrollTop(),
+            windowHeight = $(window).height();
+
+            if (scroll > elemPos - windowHeight + 100) {
+                $(this).addClass('scrollin');            
+            }
+    });
+});
+
+// about_index
+
+$(window).scroll(function () {
+    $('.font').each(function() {
+        var elemPos = $(this).offset().top,
+            scroll = $(window).scrollTop(),
+            windowHeight = $(window).height();
+            fonts = $('.font');
+
+            if (scroll > elemPos - windowHeight + 100) {
+                fonts.each(function(i){
+                    $(this).delay(200*i).animate({opacity: 1});
+                });
+            };
+
+    });
+});
+
+// works_index 
+
+$(function() {
+    $('.content').hide();
+    $('.content').each(function(i){
+        $(this).delay(1000*i).show('slide');
+    });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
