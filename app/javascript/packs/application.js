@@ -52,7 +52,7 @@ $(function() {
 // });
 
 $(function() {
-    $('.fadein').hide().fadeIn(5000);
+    $('.fadein').hide().fadeIn(3000);
 });
 
 // about_index

@@ -7,7 +7,43 @@
 
 body {
 	background-color: #EEEEEE !important;
+	margin: 0;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+
+  .footer {
+	  padding: 20px;
+	}
+
 }
+
+// contact_page
+
+.contact_page {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+
+	h3 {
+		margin: 7px 20% 0 0;
+	}
+
+	.icon {
+		font-size: 35px;
+		color: #666666;
+		transition: all .3s;
+		margin: 10px;
+	
+		&:hover {
+			color: blue;
+			transform: translateY(-5px);
+		}
+	}
+
+}
+
+
 
 h1 {
 	text-align: center;
@@ -22,7 +58,7 @@ h1 {
 
 .whole_body {
 
-	.navbar-light .navbar-toggler {
+	.navbar-dark .navbar-toggler {
 		border-color: rgba(0,0,0,0);
 	}
 
@@ -163,7 +199,6 @@ h1 {
 	list-style: outside none none;
 	margin-bottom: 20px;
 	padding: 0 10px;
-	width: 33.333%;
 }
 .list-items-container .list-item img {
 	display: block;
@@ -332,36 +367,6 @@ figure {
 
 }
 
-// contact_page
-
-.contact_page {
-	display: flex;
-	justify-content: center;
-	margin: 30px;
-
-	h3 {
-		margin: 7px 20% 0 0;
-	}
-
-	.icon {
-		font-size: 35px;
-		color: #666666;
-		transition: all .3s;
-		margin: 10px;
-	
-		&:hover {
-			color: blue;
-			transform: translateY(-5px);
-		}
-	}
-
-}
-
-// footer 
-
-.footer {
-	padding: 20px;
-}
 
 // skills
 
@@ -395,7 +400,11 @@ figure {
 // works_index
 
 .works_index {
-	margin: 0 3%;
+	margin: 0 5%;
+
+	.explanation {
+		margin: 3% 0;
+	}
 
 	.homeru {
 		margin: 5% 0 10% 0;
@@ -416,8 +425,8 @@ figure {
 // contact_index
 
 #formWrapper {
+	margin: 5% 0;
 	text-align: center;
-
 	label {
 		font-size: 20px;
 	}
