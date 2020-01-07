@@ -18,6 +18,10 @@ body {
 
 }
 
+p {
+	font-size: 20px;
+}
+
 // contact_page
 
 .contact_page {
@@ -424,9 +428,24 @@ figure {
 
 // contact_index
 
+.contact_intro {
+	margin: 3%;
+
+	.paper_plane {
+		font-size: 70px;
+		color: #666666;
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+	}
+
+
+}
+
 #formWrapper {
 	margin: 5% 0;
 	text-align: center;
+
 	label {
 		font-size: 20px;
 	}

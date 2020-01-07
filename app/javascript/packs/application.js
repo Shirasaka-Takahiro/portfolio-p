@@ -51,9 +51,6 @@ $(function() {
 //     });
 // });
 
-// $(function() {
-//     $('.fadein').hide().fadeIn(6000);
-// });
 
 $(function() {
     $('li').hide();
