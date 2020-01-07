@@ -5,6 +5,10 @@
 
 // common
 
+body {
+	background-color: #EEEEEE !important;
+}
+
 h1 {
 	text-align: center;
 	margin: 30px 0 40px 0;
@@ -17,7 +21,6 @@ h1 {
 }
 
 .whole_body {
-	background-color: #EEEEEE;
 
 	.navbar-light .navbar-toggler {
 		border-color: rgba(0,0,0,0);
@@ -78,17 +81,6 @@ h1 {
 
 }
 
-.fadein {
-	opacity: 0;
-	transform: translate(0, 30px);
-	transition: all 1500ms;
-}
-
-.fadein.scrollin  {
-	opacity: 1;
-	transform: translate(0 ,0);
-}
-
 // introbox
 
 .intro_box {
@@ -96,7 +88,7 @@ h1 {
 	margin: auto;
 
 	.self_intro {
-		margin: 15px 0 30px 0;
+		margin: 10px 0 5% 0;
 	}
 
 }
@@ -373,9 +365,13 @@ figure {
 
 // skills
 
+.carousel-inner {
+	margin-top: 5%;
+}
+
 .skills {
 	text-align: center;
-	margin-top: 30px;
+	margin: 10% 0;
 	
 	.font {
 		font-size: 70px;

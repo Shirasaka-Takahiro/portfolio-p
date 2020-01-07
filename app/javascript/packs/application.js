@@ -39,33 +39,28 @@ $(function() {
     $('.name').hide().fadeIn(1000).css({'text-decoration':'underline', 'text-decoration-color':'#666666'});
 });
 
-$(window).scroll(function (){
-    $('.fadein').each(function() {
-        var elemPos = $(this).offset().top,
-            scroll = $(window).scrollTop(),
-            windowHeight = $(window).height();
+// $(window).scroll(function (){
+//     $('.fadein').each(function() {
+//         var elemPos = $(this).offset().top,
+//             scroll = $(window).scrollTop(),
+//             windowHeight = $(window).height();
 
-            if (scroll > elemPos - windowHeight + 100) {
-                $(this).addClass('scrollin');            
-            }
-    });
+//             if (scroll > elemPos - windowHeight + 100) {
+//                 $(this).addClass('scrollin');            
+//             }
+//     });
+// });
+
+$(function() {
+    $('.fadein').hide().fadeIn(5000);
 });
 
 // about_index
 
-$(window).scroll(function () {
-    $('.font').each(function() {
-        var elemPos = $(this).offset().top,
-            scroll = $(window).scrollTop(),
-            windowHeight = $(window).height();
-            fonts = $('.font');
 
-            if (scroll > elemPos - windowHeight + 100) {
-                fonts.each(function(i){
-                    $(this).delay(200*i).animate({opacity: 1});
-                });
-            };
-
+$(function() {
+    $('.font').each(function(i) {
+        $(this).delay(200*i).animate({opacity: 1});
     });
 });
 
