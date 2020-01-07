@@ -51,8 +51,15 @@ $(function() {
 //     });
 // });
 
+// $(function() {
+//     $('.fadein').hide().fadeIn(6000);
+// });
+
 $(function() {
-    $('.fadein').hide().fadeIn(3000);
+    $('li').hide();
+    $('li').each(function(i) {
+        $(this).delay(300*i).fadeIn();
+    });
 });
 
 // about_index
